@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actif Sénégal</title>
+<style>
+  :root {
+    --vert: #0B6B3A;
+    --vert-fonce: #084D2A;
+    --vert-clair: #E6F3EB;
+    --blanc: #FFFFFF;
+    --texte: #1B2A22;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--blanc);
+    color: var(--texte);
+    line-height: 1.6;
+  }
+  header { background: var(--vert); color: var(--blanc); }
+  .barre {
+    max-width: 960px; margin: 0 auto; padding: 16px 20px;
+    display: flex; flex-wrap: wrap; gap: 12px 24px;
+    align-items: center; justify-content: space-between;
+  }
+  .logo { font-size: 1.5rem; font-weight: bold; color: var(--blanc); text-decoration: none; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  nav a { color: var(--blanc); text-decoration: none; font-family: Arial, sans-serif; font-size: 0.95rem; padding: 4px 0; border-bottom: 2px solid transparent; }
+  nav a:hover, nav a:focus { border-bottom-color: var(--blanc); }
+  .hero { background: var(--vert-clair); }
+  .hero-contenu { max-width: 960px; margin: 0 auto; padding: 48px 20px; }
+  .hero h1 { font-size: clamp(1.8rem, 6vw, 2.8rem); line-height: 1.2; color: var(--vert-fonce); max-width: 18em; }
+  .hero p { margin-top: 16px; font-size: 1.1rem; max-width: 34em; }
+  main { max-width: 960px; margin: 0 auto; padding: 40px 20px 56px; }
+  main h2 { font-size: 1.5rem; color: var(--vert-fonce); margin-bottom: 20px; }
+  .cartes { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .carte { border: 2px solid var(--vert); border-radius: 6px; padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+  .carte h3 { font-size: 1.2rem; color: var(--vert); }
+  .carte p { flex: 1; }
+  .bouton {
+    align-self: flex-start; background: var(--vert); color: var(--blanc);
+    font-family: Arial, sans-serif; font-size: 0.95rem; text-decoration: none;
+    padding: 10px 18px; border-radius: 4px;
+  }
+  .bouton:hover, .bouton:focus { background: var(--vert-fonce); }
+  footer { background: var(--vert-fonce); color: var(--blanc); text-align: center; padding: 20px; font-family: Arial, sans-serif; font-size: 0.9rem; }
+  a:focus-visible { outline: 3px solid #F2B705; outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="barre">
+    <a class="logo" href="index.html">Actif Sénégal</a>
+    <nav>
+      <a href="#mobile-money">Mobile Money</a>
+      <a href="#vendre">Vendre et entreprendre</a>
+      <a href="#tiktok">TikTok</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-contenu">
+    <h1>Des explications simples, étape par étape, pour gagner de l'argent en ligne depuis le Sénégal</h1>
+    <p>Chaque article est écrit simplement, pour que tout le monde puisse comprendre et agir, même sans expérience.</p>
+  </div>
+</section>
+
+<main>
+  <h2>Nos articles</h2>
+  <div class="cartes">
+    <article class="carte">
+      <h3>Gagner de l'argent en ligne</h3>
+      <p>Les premières étapes pour commencer à gagner de l'argent avec ton téléphone, depuis le Sénégal.</p>
+      <a class="bouton" href="gagner-argent-en-ligne.html">Lire l'article</a>
+    </article>
+    <article class="carte" id="mobile-money">
+      <h3>Mobile Money</h3>
+      <p>Comprendre comment envoyer, recevoir et utiliser ton argent avec Mobile Money.</p>
+      <a class="bouton" href="#">Lire l'article</a>
+    </article>
+    <article class="carte" id="vendre">
+      <h3>Vendre et entreprendre</h3>
+      <p>Créer ta boutique en ligne et vendre tes premiers produits, pas à pas.</p>
+      <a class="bouton" href="#">Lire l'article</a>
+    </article>
+    <article class="carte" id="tiktok">
+      <h3>TikTok</h3>
+      <p>Créer ton compte TikTok et l'utiliser pour trouver des clients.</p>
+      <a class="bouton" href="#">Lire l'article</a>
+    </article>
+  </div>
+</main>
+
+<footer>
+  © 2026 Actif Sénégal
+</footer>
+
+</body>
+</html>
